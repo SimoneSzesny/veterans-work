@@ -13,7 +13,6 @@ Rails.application.routes.draw do
   get '/about' => 'pages#about'
   get '/how' => 'pages#how'
   get '/admin_panel' => 'pages#admin_panel'
-  get '/contracts' => 'contracts#index'
 
   resources :admins
   resources :customer_requests
