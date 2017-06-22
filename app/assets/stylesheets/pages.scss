@@ -1,8 +1,15 @@
-.caption {
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "colors";
+
+.caption, h3 {
   text-align: center;
 }
-h3 {
+
+.help, .how, .about {
   text-align: center;
+  background-color: $white;
 }
 
 @media only screen and (max-width: 768px) {

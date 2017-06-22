@@ -28,8 +28,8 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li><a href="/about">About</a></li>
               <li><a href="/how">How It Works</a></li>
+              <li><a href="/about">About</a></li>
             </ul>
             <div class="navbar-form navbar-left">
               <% if current_admin %>
@@ -53,6 +53,14 @@
                     <% elsif current_company %>
                       <li><a href="/companies/<%=current_company.id%>">Profile</a></li>
                       <li><a href="/companies/edit">Edit My Profile</a></li>
+                    <% elsif current_admin %>
+                      <li><a href="/pages/">Home Page</a></li>
+                      <li><a href="/credits/">Credits</a></li>
+                      <li><a href="/companies/">Companies</a></li>
+                      <li><a href="/admins/">Customers</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="/admins/<%=current_admin.id%>">Profile</a></li>
+                      <li><a href="/admins/edit">Edit My Profile</a></li>
                     <% end %>
                     <li role="separator" class="divider"></li>
                     <li><%= link_to "Logout #{current_company.name}", destroy_company_session_path, method: :delete if current_company %></li>

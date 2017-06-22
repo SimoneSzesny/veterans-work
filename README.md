@@ -27,7 +27,7 @@
 10. Once merged I await my changes to be deployed to the [qa environment](http://qa-veterans-work.herokuapp.com/).
 
 ### Working with Mailers in Development Mode
-To interact with the app's mailers, you need to run **Mailcatcher** in tandem with Veterans Work. To do this, open a separate terminal window and activate Mailcatcher with: `make mailcatcher`.
+To interact with the app's mailers, you need to run **Mailcatcher** in tandem with Veterans Work. To do this, make sure you've installed it by using `gem install mailcatcher` and then open a separate terminal window and activate Mailcatcher with: `mailcatcher`.
 
 This will spin up an inbound mailbox app that you can interact with by opening `localhost:1080` in your browser.
 
@@ -54,3 +54,4 @@ Once code is merged into our organization master branch, we propel it through th
 >Note: No need to open PR's from one branch to another on github.
 
 **Login details should be obtained in person for access to the build log and never shared on slack or this repo.**
+
